@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#Wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.List{
+  display: flex;
+  width: 70%;
+}
+
+.List-item-done{
+  color: grey;
+  text-decoration: line-through;
+}
+
+.List-column{
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  padding: 25px 25px;
+  border: white 1px solid;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.List-item{
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border: white 1px solid;
+  border-radius: 10px;
+}
+
+.List-item:hover{
+  background-color: #393d44;
+}
+
+.List-item div input{
+  width: 50px;
+  height: 50px;
+}
+
+.Form{
+  width: 30%;
+  padding: 15px 25px 25px 25px;
+  border: white 1px solid;
+  border-radius: 10px;
+  min-width: 350px;
+}
+
+.Form div{
+  display: flex;
+  justify-content: space-around;
+}
+
+.Form input{
+  font-size: 0.7em;
+  color: white;
+  width: 50%;
+  height: 50px;
+  background-color: #282c34;
+  border: white 1px solid;
+  border-radius: 5px;
+
+}
+
+::placeholder{
+  opacity: 0.8;
+}
+
+.Form button{
+  width: 25%;
+  height: 50px;
+  color: white;
+  background-color: #282c34;
+  border: white 1px solid;
+  border-radius: 10px;
+}
+
+.Form input:hover{
+  background-color: #393d44
+}
+
+.Form button:hover{
+  background-color: #393d44;
+}
+
+.Form button:active {
+  background-color: #a4a4a4;
+}
